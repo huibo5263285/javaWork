@@ -1,4 +1,5 @@
-import  java.awt.*;
+import java.awt.*;
+
 /**
  * User: Administrator
  * Date: 13-3-20
@@ -9,16 +10,15 @@ public class ChatClient extends Frame {
     TextArea taContent = new TextArea();
 
     public static void main(String[] args) {
-
         new ChatClient().launchFrame();
     }
 
-    public void launchFrame (){
-        setLocation(400,300);
-        setSize(500,400);
+    public void launchFrame() {
+        setLocation(400, 300);
+        setSize(500, 400);
         setVisible(true);
-        add(tfTxt , BorderLayout.SOUTH);
-        add(taContent , BorderLayout.NORTH);
+        add(tfTxt, BorderLayout.SOUTH);
+        add(taContent, BorderLayout.NORTH);
         pack();
     }
 }
