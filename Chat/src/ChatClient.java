@@ -1,4 +1,5 @@
 import java.awt.*;
+import java.awt.event.*;
 
 /**
  * User: Administrator
@@ -20,5 +21,11 @@ public class ChatClient extends Frame {
         add(tfTxt, BorderLayout.SOUTH);
         add(taContent, BorderLayout.NORTH);
         pack();
+        addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+                System.exit(0);
+            }
+        });
     }
 }
